@@ -108,7 +108,7 @@ class admin_notification_list {
                     $eventdata->contexturlname = $SITE->fullname;
                     $eventdata->replyto = core_user::get_noreply_user()->email;
                     $eventdata->fullmessage = get_string(
-                        'admin_notifier_'.$currentnotification->get_message(),
+                        'admin_notifier_' . $currentnotification->get_message(),
                         $this->component,
                         $currentnotification->get_notification_infos()
                     );
@@ -128,7 +128,6 @@ class admin_notification_list {
                     message_send($eventdata);
                 }
             }
-
         }
     }
 }

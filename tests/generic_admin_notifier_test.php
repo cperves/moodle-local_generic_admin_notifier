@@ -33,7 +33,6 @@ use stdClass;
  * notifier tests
  */
 final class generic_admin_notifier_test extends advanced_testcase {
-
     /**
      * test notifier \local_gen
      * @covers \local_generic_admin_notifier\admin_notification_list::add_notification
