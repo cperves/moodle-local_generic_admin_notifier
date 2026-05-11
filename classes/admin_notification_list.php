@@ -45,8 +45,8 @@ class admin_notification_list {
 
     /**
      * constructor
-     * @param $component
-     * @param $messageprovider
+     * @param string $component moodle component
+     * @param string $messageprovider message provider classname
      */
     public function __construct($component, $messageprovider) {
         $this->component = $component;
@@ -56,7 +56,7 @@ class admin_notification_list {
 
     /**
      * add an admin_notification error to list
-     * @param $adminnotification
+     * @param notification $adminnotification notification object
      * @return void
      */
     public function add_error($adminnotification/*admin_notification*/) {
@@ -65,7 +65,7 @@ class admin_notification_list {
 
     /**
      * add admin_notification array to the notificationlist
-     * @param $notifications
+     * @param array  $notification an array of admin_notification_list
      * @return void
      */
     public function add_notification($notifications) {
@@ -82,7 +82,7 @@ class admin_notification_list {
 
     /**
      * notify admin of each notification in notification list through moodle notification system
-     * @param $notifyuser
+     * @param boolean $notifyuser  notifiy concerned user
      * @return void
      * @throws \coding_exception
      */

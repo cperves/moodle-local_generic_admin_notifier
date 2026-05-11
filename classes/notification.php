@@ -68,9 +68,9 @@ class notification {
 
     /**
      * constructor
-     * @param $notificationinfos
-     * @param $message
-     * @param $user
+     * @param \stdClass $notificationinfos notification informations
+     * @param string $message message
+     * @param \stdClass $user
      */
     public function __construct($notificationinfos, $message, $user) {
         $this->notificationinfos = $notificationinfos;
